@@ -1,21 +1,17 @@
 
-let map;
 
-function initMap() {
-  const localContextMapView = new google.maps.localContext.LocalContextMapView({
-    element: document.getElementById("map"),
-    placeTypePreferences: [
-      { type: "restaurant" },
-      { type: "tourist_attraction" },
-    ],
-    maxPlaceCount: 12,
-  });
+import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+ 
+mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVya3M5NzMzczAzam8xMmRuaXQwb2gifQ.BVENabZQ41SpEuvsiOugbQ';
+const map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9, // starting zoom
+projection: 'globe' // display the map as a 3D globe
+});
+map.on('style.load', () => {
+map.setFog({}); // Set the default atmosphere style
 
-  map = localContextMapView.map;
-  map.setOptions({
-    center: { lat: 39.0997, lng: -94.5786 },
-    zoom: 8,
-  });
-}
 
-window.initMap = initMap;
+});
