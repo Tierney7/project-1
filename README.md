@@ -1,10 +1,7 @@
-# project-1
+# The Great BBQ Debate
 
-As a user I want to search a location and find the best BBQ in that area.
+## a search engine and review board that helps find the best BBQ in Kansas City, Memphis, Texas and North/South Carolina. These cities/states were chosen because they are famously known for their BBQ. This site will help BBQ lovers find great resturants when on vacation or just simply introduce new places in the area.  
 
-If I search a location
-Then I am provided with a list of the best BBQ in that area.
-If I click on a BBQ option
-Then i am provided with a review of that establishment.
-If i choose that establishment
-Then I am provided with the location and directions.
+Users will search a location then be provided with a list of the best BBQ in that area.
+When users click on a BBQ option reviews of that establishment will be provided
+If the user chooses that establishment the location and directions will be given
