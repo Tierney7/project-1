@@ -1,10 +1,9 @@
-# project-1
+# The Great BBQ Debate
 
-As a user I want to search a location and find the best BBQ in that area.
+Our goal is to create a search engine and review board that helps find the best BBQ in Kansas City, Memphis, Texas and North/South Carolina.
 
-If I search a location
-Then I am provided with a list of the best BBQ in that area.
-If I click on a BBQ option
-Then i am provided with a review of that establishment.
-If i choose that establishment
-Then I am provided with the location and directions.
+## Description
+
+Users will search a location then be provided with a list of the best BBQ in that area.
+When users click on a BBQ option reviews of that establishment will be provided
+If the user chooses that establishment the location and directions will be given
