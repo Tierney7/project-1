@@ -17,13 +17,12 @@
 
 
 <body>
-<!-- Nav bar and links to differnt parts of the page -->
     <ul>
         <h1>The Great BBQ Debate</h1>
         
-        <li><a href="#my_work">Staff Picks</a></li>
-        <li><a href="#contact">Reviews</a></li>
-        <li><a href="#About_Me">Regions</a></li>
+        <li><a href="">Staff Picks</a></li>
+        <li><a href="">Reviews</a></li>
+        <li><a href="">Regions</a></li>
       </ul>
           
     <div class="main">
@@ -38,12 +37,7 @@
     <img id="profilePic" src="assets/images/IMG_7019 (2).JPG" alt="tsg-main" style="width:100%">
     
 </h3>Start your journey</h3>
-<p>
 
- 
-
- 
-</p>
 </div>
   
 </div>
@@ -60,20 +54,18 @@
       <div class="content">
         <div id='map1' style='width: 400px; height: 300px;'></div>
         <script>
-        // TO MAKE THE MAP APPEAR YOU MUST
-        // ADD YOUR ACCESS TOKEN FROM
-        // https://account.mapbox.com
-        mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
+          mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
         const map1 = new mapboxgl.Map({
-        container: 'map1', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-98.90, 31.37], // starting position [lng, lat]
-        zoom: 4.75, // starting zoom
-        projection: 'globe' // display the map as a 3D globe
+        container: 'map1', 
+        style: 'mapbox://styles/mapbox/streets-v11', 
+        center: [-98.90, 31.37], 
+        zoom: 4.75,
+        projection: 'globe' 
         });
         map.on('style.load', () => {
-        map.setFog({}); // Set the default atmosphere style
-        });
+        map.setFog({}); 
+         });
+
         </script>
       </div>
     </div>
@@ -83,19 +75,16 @@
     <div class="content">
         <div id='map2' style='width: 400px; height: 300px;'></div>
         <script>
-        // TO MAKE THE MAP APPEAR YOU MUST
-        // ADD YOUR ACCESS TOKEN FROM
-        // https://account.mapbox.com
         mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
         const map2 = new mapboxgl.Map({
-        container: 'map2', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-94.57, 39.09], // starting position [lng, lat]
-        zoom: 8, // starting zoom
-        projection: 'globe' // display the map as a 3D globe
+        container: 'map2', 
+        style: 'mapbox://styles/mapbox/streets-v11', 
+        center: [-94.57, 39.09], 
+        zoom: 8, 
+        projection: 'globe' 
         });
         map.on('style.load', () => {
-        map.setFog({}); // Set the default atmosphere style
+        map.setFog({}); 
         });
         </script>
       
@@ -112,19 +101,16 @@
        
         <div id='map' style='width: 400px; height: 300px;'></div>
 <script>
-// TO MAKE THE MAP APPEAR YOU MUST
-// ADD YOUR ACCESS TOKEN FROM
-// https://account.mapbox.com
 mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
 const map = new mapboxgl.Map({
-container: 'map', // container ID
-style: 'mapbox://styles/mapbox/streets-v11', // style URL
-center: [-90.02, 35.14], // starting position [lng, lat]
-zoom: 8, // starting zoom
-projection: 'globe' // display the map as a 3D globe
+container: 'map', 
+style: 'mapbox://styles/mapbox/streets-v11', 
+center: [-90.02, 35.14], 
+zoom: 8, 
+projection: 'globe' 
 });
 map.on('style.load', () => {
-map.setFog({}); // Set the default atmosphere style
+map.setFog({}); 
 });
 </script>
         
@@ -137,19 +123,16 @@ map.setFog({}); // Set the default atmosphere style
       <div class="content">
         <div id='map4' style='width: 400px; height: 300px;'></div>
         <script>
-        // TO MAKE THE MAP APPEAR YOU MUST
-        // ADD YOUR ACCESS TOKEN FROM
-        // https://account.mapbox.com
         mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
         const map4 = new mapboxgl.Map({
-        container: 'map4', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [-79.66, 34.85], // starting position [lng, lat]
-        zoom: 5.50, // starting zoom
-        projection: 'globe' // display the map as a 3D globe
+        container: 'map4', 
+        style: 'mapbox://styles/mapbox/streets-v11', 
+        center: [-79.66, 34.85], 
+        zoom: 5.50, 
+        projection: 'globe' 
         });
         map.on('style.load', () => {
-        map.setFog({}); // Set the default atmosphere style
+        map.setFog({}); 
         });
         </script>
         
@@ -160,27 +143,21 @@ map.setFog({}); // Set the default atmosphere style
 </div>
 </div>
    </div>
-    
-   
-
-  
+     
   
 <ul>
-    <!-- Contact bar with links to email, linkedin, and phone number -->
+ 
     <h1>Contact Us</h1>
 
     <div id="contact">
       
-    <li><a href="https://github.com/Tierney7">About Us</a></li>
-    <li><a href="https://www.linkedin.com/in/matthew-tierney-a94599242/">Reach Us</a></li>
-    <li><a href="mailto: tierneybbq@gmail.com"></a></li>
-    <li><a href="#about"></a></li>
+    <li><a href="">About Us</a></li>
+    <li><a href="">Reach Us</a></li>
+    
       
   </ul>
   </div>
      </div>
-    
-     
- 
+     <script src="assets/script.js"></script>
 </body>
 </html>
