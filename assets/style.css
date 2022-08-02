@@ -150,7 +150,6 @@ display:flex;
   .right {
     width: 100%;
   }
-  /* makes my website fit a smaller and bigger window size  */
  
 map {
  position: absolute; top: 0; bottom: 0; width: 100%; }
@@ -176,13 +175,11 @@ map {
   }
 
 
-  /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #e9e9e9;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -193,19 +190,16 @@ map {
   font-size: 17px;
 }
 
-/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Style the "active" element to highlight the current page */
 .topnav a.active {
   background-color: darkred;
   color: white;
 }
 
-/* Style the search box inside the navigation bar */
 .topnav input[type=text] {
   float: right;
   padding: 6px;
@@ -215,7 +209,6 @@ map {
   font-size: 17px;
 }
 
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
