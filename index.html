@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/style.css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script type="module" src="assets/script.js"></script>
+    <script src="assets/script.js" defer></script>
     <title>The Great BBQ Debate</title>
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> 
 </head>
 
 
-<body>
+<body onload="init()">
 <!-- Nav bar and links to differnt parts of the page -->
     <ul>
         <h1>The Great BBQ Debate</h1>
@@ -25,24 +25,16 @@
     <div class="main">
         <h2>Your BBQ Adventure Awaits!</h2>
     <p></p>
-              
-<div id="about_div">
-  <div class="left">
-    <h2>Start your journey...</h2>
-  </div>
-  <div class="content">
-    <img id="profilePic" src="assets/images/IMG_7019 (2).JPG" alt="tsg-main" style="width:100%">
-    
-<h3 id="About_Me"></h3>Start your journey</h3>
-<p>
 
- 
-
- 
-</p>
-</div>
   
 </div>
+
+<form class= "search-wrapper" id="search-wrapper" onsubmit="search()">
+  <label for="search">Search City Here</label>
+  <input type="search" id="search-content">
+</form>
+
+<div id ="businesses-wrapper"></div>
 
 <div id="">
   <div class="left"> 
@@ -114,9 +106,5 @@
   </div>
      </div>
     
-     
-     <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnRHVDNtzhfocYBd3ItrxAk_CyU09PpMM&libraries=localContext&v=beta&callback=initMap">
-</script>
 </body>
 </html>
