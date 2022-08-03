@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
     <link href="assets/style.css" rel="stylesheet">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="assets/script.js" defer></script>
@@ -41,57 +44,106 @@
     <h3>Regions</h3>
   </div>
   
-<div class="right">
-  <div class="row">
-    <div class="column">
-      <div class="content">
-        <a href="https://bootcamp.ku.edu/coding/">
-        <img src="assets/images/data=1oFhp66L2W1FwYAdl1RArE0D7lPewnuMJ-wSANWJfNuvDDRDmq77_OkgiWjJ4q_TjAr5eF5Gmq5pkBmfBnYjDw5eU_gvFLIin92UtT_aC9GRXowFl66yvnYQiTPivij1ZBz6SXtHUN_0z-NHffDjmr_stSNf1tKAakavUzj9H.png" alt="texas" width="100%">
-       <h3></h3>
-        <p><a href="#work"></a>
-            </p>
-      </div>
-    </div>
+  <div class="right">
+    <div class="row">
+      <div class="column">
+          <h3>Texas</h3>
+        <div class="content">
+          <div id='map1' style='width: 152px; height: 300px;'></div>
+          <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
+          const map1 = new mapboxgl.Map({
+          container: 'map1', 
+          style: 'mapbox://styles/mapbox/streets-v11', 
+          center: [-98.90, 31.37], 
+          zoom: 5.5,
+          projection: 'globe' 
+          });
+          map.on('style.load', () => {
+          map.setFog({}); 
+           });
   
-  <div class="column">
-    <div class="content">
-      <a href="https://code.visualstudio.com/">
-      <img src="assets/images/data=D4OhKWrTfdnnRLUY1SCK2Uzt1rfJSpiMWhozlhlqTJASKxgz3DehrfVwDrqmoPADyVJxAIYmtjmVWX6-FczreJIjUnpvrcFYnHB29RhBGx-N1aOR66xFydCYwk7rWv6PTrL10K7CNk5H6iAolT4Ri9Aq80AwjS3XUdmL8.png" alt="vsc" width="100%">
-      <h3></h3>
-      <p></p>
-    </div>
-  </div>
- </div>
-  <div class="row">
-    
-   
-    <div class="column">
-      <div class="content">
-        <a href="https://github.com/Tierney7">
-        <img src="assets/images/data=hKOzCGseNINFhMkBoXTfcii_kYO80PDekSgf3njsRW7EXxQopDTW5aaSkLaRzjkTlyyutwvOQVIFCJ3bKZs1tQEkvvgdD7nr0Jk17WWH3uzQwfvAEGM6aGdPWy5AQtoTgwH03hrFcCYmR1ebwcvEcD7YvIkewgPvd7hIjhxZT.png" alt="git" width="100%">
-        <h3></h3>
-        <p></p>
+          </script>
+        </div>
       </div>
-    </div>
     
     <div class="column">
+      <h3>Kansas City</h3>
       <div class="content">
+          <div id='map2' style='width: 152px; height: 300px;'></div>
+          <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
+          const map2 = new mapboxgl.Map({
+          container: 'map2', 
+          style: 'mapbox://styles/mapbox/streets-v11', 
+          center: [-94.57, 39.09], 
+          zoom: 8, 
+          projection: 'globe' 
+          
+          });
+          map.on('style.load', () => {
+          map.setFog({}); 
+          });
+          </script>
         
-         <img src="assets/images/data=uWle-v1a7__Y-CDmMTUWU0oBLQs-FYPxeVRwr4GCxrireSDVoLdm1orouoyPOcyfD_zq26uG1-8M6eDiB9Gihe_XzsUjsHD4ygCW2lkRIlghQrdCg10IOM28OMTdLWvV5TjJzrTigoeRVYEkEN-FVqMb4m2EPY3bIJtDDOnI5.png" alt="slack" width="100%">
-        <h3><a href="https://slack.com/"></a></h3>
         <p></p>
       </div>
     </div>
-  </div>
-</div>
-</div>
    </div>
+    <div class="row">
+      
+     
+      <div class="column">
+          <h3>Memphis</h3>
+        <div class="content">
+         
+          <div id='map' style='width: 152px; height: 300px;'></div>
+  <script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
+  const map = new mapboxgl.Map({
+  container: 'map', 
+  style: 'mapbox://styles/mapbox/streets-v11', 
+  center: [-90.02, 35.14], 
+  zoom: 8, 
+  projection: 'globe' 
+  });
+  map.on('style.load', () => {
+  map.setFog({}); 
+  });
+  </script>
+          
+          <p></p>
+        </div>
+      </div>
+      
+      <div class="column">
+          <h3>Carolina's</h3>
+        <div class="content">
+          <div id='map4' style='width: 152px; height: 300px;'></div>
+          <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoidGllcmRyb3A3IiwiYSI6ImNsNjVyb2s2cDBrbHkzZHA4cTJreDdvOHkifQ.euAxgHYtUcXV8sOM1qqUzw';
+          const map4 = new mapboxgl.Map({
+          container: 'map4', 
+          style: 'mapbox://styles/mapbox/streets-v11', 
+          center: [-79.66, 34.85], 
+          zoom: 5.50, 
+          projection: 'globe' 
+          });
+          map.on('style.load', () => {
+          map.setFog({}); 
+          });
+          </script>
+          
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+     </div>
+       
     
-   
-
-  
-  
-<ul>
+  <ul>
     <!-- Contact bar with links to email, linkedin, and phone number -->
     <h1>Contact Us</h1>
 
