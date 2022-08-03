@@ -11,27 +11,39 @@ function search(){
     .then(data => {
       data.businesses.map(business => {
         const div = document.createElement('div');
-        const img = document.createElement('img');
-        img.src = business.image_url;
-        div.appendChild(img);
+        const imgDiv = document.createElement('div');
+  
+        imgDiv.style = 'background-image: url("' + business.image_url + '"); height: 200px; width: 200px; border-radius: 50%; background-size: cover; background-position: center; background-repeat: no-repeat;';
+        imgDiv.style.display = 'inline-block';
+        imgDiv.style.marginLeft = '50px';
+  
         const name = document.createElement('h1');
         name.innerHTML = business.name;
-        div.appendChild(name);
+        name.style.display = 'inline-block';
+  
         const website = document.createElement('a');
         website.href = business.url;
         website.innerHTML = business.url;
-        div.appendChild(website);
+  
         const phone = document.createElement('p');
         phone.innerHTML = 'Phone: ' + business.phone;
-        div.appendChild(phone);
+  
         const rating = document.createElement('p');
         rating.innerHTML = 'Rating: ' + business.rating;
-        div.appendChild(rating);
         div.style.backgroundColor = 'rgba(255,255,255,0.05)';
         div.style.padding = '10px';
         div.style.borderRadius = '10px';
         div.style.marginBottom = '10px';
         div.style.border = '1px solid #ccc';
+  
+        div.appendChild(imgDiv);
+        div.appendChild(name);
+        div.appendChild(document.createElement('br'));
+        div.appendChild(document.createElement('br'));
+        div.appendChild(document.createElement('br'));
+        div.appendChild(website);
+        div.appendChild(phone);
+        div.appendChild(rating);
         document.getElementById('businesses-wrapper').appendChild(div);
     })
     });
